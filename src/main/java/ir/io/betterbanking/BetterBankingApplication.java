@@ -1,13 +1,13 @@
-package ir.com.betterbankingio.finapp;
+package ir.io.betterbanking;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class FinappApplication {
+public class BetterBankingApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(FinappApplication.class, args);
+        SpringApplication.run(BetterBankingApplication.class, args);
     }
 
 }

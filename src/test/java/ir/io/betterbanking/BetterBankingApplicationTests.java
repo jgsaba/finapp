@@ -1,10 +1,10 @@
-package ir.com.betterbankingio.finapp;
+package ir.io.betterbanking;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class FinappApplicationTests {
+class BetterBankingApplicationTests {
 
     @Test
     void contextLoads() {
