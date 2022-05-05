@@ -10,7 +10,7 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
 @AutoConfigureMockMvc
 @SpringBootTest
-class TransactionControllerIntegrationTest {
+class TransactionControllerIntegrationTest extends TestContainersConfiguration {
 
     @Autowired
     private MockMvc mockMvc;

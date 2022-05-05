@@ -3,23 +3,22 @@ package ir.io.betterbanking;
 import ir.io.betterbanking.model.Transaction;
 import ir.io.betterbanking.service.TransactionService;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.InjectMocks;
-import org.mockito.junit.jupiter.MockitoExtension;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@ExtendWith(MockitoExtension.class)
-class TransactionServiceTest {
+@SpringBootTest
+class TransactionServiceTest extends TestContainersConfiguration {
 
-    @InjectMocks
+    @Autowired
     private TransactionService transactionService;
 
     @Test
     void testFindTransactionsByAccountNumber(){
-        List<Transaction> transactions = transactionService.findAllByAccountNumber("223669");
+        List<Transaction> transactions = transactionService.findAllByAccountNumber("659882");
         assertEquals(1, transactions.size());
     }
 
